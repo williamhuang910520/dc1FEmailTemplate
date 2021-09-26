@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using Outlook = Microsoft.Office.Interop.Outlook;
+using Microsoft.CSharp;
+
 
 
 
@@ -39,7 +42,7 @@ namespace dc1FEmailTemplate
                 return;
             }
 
-            richTextBox1.LoadFile(filePath);
+            richTextBox1.LoadFile(debugPath);
 
             richTextBox1.Find("*姓氏*", RichTextBoxFinds.MatchCase);
             richTextBox1.SelectedText = name.Text;
@@ -78,8 +81,11 @@ namespace dc1FEmailTemplate
 
         private void buttonCopy_Click(object sender, EventArgs e)
         {
-            // Clipboard.SetText(richTextBox1.Rtf, TextDataFormat.Rtf);
-            outlookSendMail();
+            //Clipboard.SetText(richTextBox1.Rtf, TextDataFormat.Rtf);
+            if(txbEmail.Text == "")
+                MessageBox.Show("Email為空");
+            else
+                outlookSendMail(txbEmail.Text);
         }
 
         public void SendEmail()
@@ -120,9 +126,16 @@ namespace dc1FEmailTemplate
             }
         }
 
-        private void outlookSendMail()
+        private void outlookSendMail(String emailAddress)
         {
-
+            Outlook.Application application = new Outlook.Application();
+            Outlook.MailItem mailItem = (Outlook.MailItem)application.CreateItem(Outlook.OlItemType.olMailItem);
+            mailItem.To = emailAddress;
+            mailItem.Subject = "I am Sub";
+            var html = RtfPipe.Rtf.ToHtml(richTextBox1.Rtf);
+            mailItem.HTMLBody = html;
+            mailItem.Send();
+            MessageBox.Show("已經發送郵件至" + emailAddress, "完成！");
         }
     }
 }

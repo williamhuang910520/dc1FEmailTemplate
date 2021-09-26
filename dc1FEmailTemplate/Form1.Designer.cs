@@ -42,14 +42,16 @@ namespace dc1FEmailTemplate
             this.buttonCopy = new System.Windows.Forms.Button();
             this.ckList_rentArea = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startDatePicker
             // 
-            this.startDatePicker.Location = new System.Drawing.Point(337, 48);
+            this.startDatePicker.Location = new System.Drawing.Point(337, 82);
             this.startDatePicker.Margin = new System.Windows.Forms.Padding(2);
             this.startDatePicker.Name = "startDatePicker";
-            this.startDatePicker.Size = new System.Drawing.Size(106, 22);
+            this.startDatePicker.Size = new System.Drawing.Size(186, 22);
             this.startDatePicker.TabIndex = 0;
             // 
             // name
@@ -57,21 +59,21 @@ namespace dc1FEmailTemplate
             this.name.Location = new System.Drawing.Point(337, 14);
             this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(106, 22);
+            this.name.Size = new System.Drawing.Size(186, 22);
             this.name.TabIndex = 1;
             // 
             // endDatePicker
             // 
-            this.endDatePicker.Location = new System.Drawing.Point(337, 82);
+            this.endDatePicker.Location = new System.Drawing.Point(337, 116);
             this.endDatePicker.Margin = new System.Windows.Forms.Padding(2);
             this.endDatePicker.Name = "endDatePicker";
-            this.endDatePicker.Size = new System.Drawing.Size(106, 22);
+            this.endDatePicker.Size = new System.Drawing.Size(186, 22);
             this.endDatePicker.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(280, 54);
+            this.label1.Location = new System.Drawing.Point(280, 88);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
@@ -80,10 +82,10 @@ namespace dc1FEmailTemplate
             // 
             // buttonGenerate
             // 
-            this.buttonGenerate.Location = new System.Drawing.Point(284, 326);
+            this.buttonGenerate.Location = new System.Drawing.Point(282, 363);
             this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGenerate.Name = "buttonGenerate";
-            this.buttonGenerate.Size = new System.Drawing.Size(159, 30);
+            this.buttonGenerate.Size = new System.Drawing.Size(241, 30);
             this.buttonGenerate.TabIndex = 3;
             this.buttonGenerate.Text = "生成文字";
             this.buttonGenerate.UseVisualStyleBackColor = true;
@@ -92,7 +94,7 @@ namespace dc1FEmailTemplate
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(280, 87);
+            this.label2.Location = new System.Drawing.Point(280, 121);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
@@ -112,7 +114,7 @@ namespace dc1FEmailTemplate
             // ckb_late
             // 
             this.ckb_late.AutoSize = true;
-            this.ckb_late.Location = new System.Drawing.Point(337, 272);
+            this.ckb_late.Location = new System.Drawing.Point(337, 306);
             this.ckb_late.Margin = new System.Windows.Forms.Padding(2);
             this.ckb_late.Name = "ckb_late";
             this.ckb_late.Size = new System.Drawing.Size(72, 16);
@@ -125,18 +127,18 @@ namespace dc1FEmailTemplate
             this.richTextBox1.Location = new System.Drawing.Point(14, 17);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(248, 292);
+            this.richTextBox1.Size = new System.Drawing.Size(248, 334);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "按下生成文字以產生內容...";
             // 
             // buttonCopy
             // 
-            this.buttonCopy.Location = new System.Drawing.Point(15, 326);
+            this.buttonCopy.Location = new System.Drawing.Point(14, 363);
             this.buttonCopy.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(246, 30);
             this.buttonCopy.TabIndex = 6;
-            this.buttonCopy.Text = "複製文字";
+            this.buttonCopy.Text = "傳送郵件";
             this.buttonCopy.UseVisualStyleBackColor = true;
             this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
@@ -152,27 +154,45 @@ namespace dc1FEmailTemplate
             "F區",
             "草皮",
             "大廣場"});
-            this.ckList_rentArea.Location = new System.Drawing.Point(337, 119);
+            this.ckList_rentArea.Location = new System.Drawing.Point(337, 153);
             this.ckList_rentArea.Margin = new System.Windows.Forms.Padding(2);
             this.ckList_rentArea.Name = "ckList_rentArea";
-            this.ckList_rentArea.Size = new System.Drawing.Size(106, 140);
+            this.ckList_rentArea.Size = new System.Drawing.Size(186, 140);
             this.ckList_rentArea.TabIndex = 15;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(280, 122);
+            this.label4.Location = new System.Drawing.Point(280, 156);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 16;
             this.label4.Text = "借用區域";
             // 
+            // txbEmail
+            // 
+            this.txbEmail.Location = new System.Drawing.Point(337, 47);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(186, 22);
+            this.txbEmail.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(300, 54);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 12);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Email";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 369);
+            this.ClientSize = new System.Drawing.Size(538, 404);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ckList_rentArea);
             this.Controls.Add(this.buttonCopy);
@@ -180,8 +200,10 @@ namespace dc1FEmailTemplate
             this.Controls.Add(this.ckb_late);
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.name);
             this.Controls.Add(this.endDatePicker);
             this.Controls.Add(this.startDatePicker);
@@ -209,6 +231,8 @@ namespace dc1FEmailTemplate
         private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.CheckedListBox ckList_rentArea;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.Label label5;
     }
 }
 
