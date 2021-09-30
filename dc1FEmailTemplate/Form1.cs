@@ -30,7 +30,7 @@ namespace dc1FEmailTemplate
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             String filePath = "\\\\140.125.155.18\\DataCenter\\110學年\\01-大廳活動\\自訂催繳格式.rtf";
-            String debugPath = "C:\\Users\\Hanchi\\Desktop\\MyDocument.rtf"
+            String debugPath = "C:\\Users\\Hanchi\\Desktop\\MyDocument.rtf";
 ;            if (name.Text == "")
             {
                 MessageBox.Show("姓氏為空");
@@ -42,7 +42,7 @@ namespace dc1FEmailTemplate
                 return;
             }
 
-            richTextBox1.LoadFile(debugPath);
+            richTextBox1.LoadFile(filePath);
 
             richTextBox1.Find("*姓氏*", RichTextBoxFinds.MatchCase);
             richTextBox1.SelectedText = name.Text;
@@ -131,9 +131,10 @@ namespace dc1FEmailTemplate
             Outlook.Application application = new Outlook.Application();
             Outlook.MailItem mailItem = (Outlook.MailItem)application.CreateItem(Outlook.OlItemType.olMailItem);
             mailItem.To = emailAddress;
-            mailItem.Subject = "I am Sub";
+            mailItem.Subject = "設計學院活動成效記錄表";
             var html = RtfPipe.Rtf.ToHtml(richTextBox1.Rtf);
             mailItem.HTMLBody = html;
+            mailItem.Attachments.Add("\\\\140.125.155.18\\DataCenter\\110學年\\01-大廳活動\\設計學院活動成效記錄表-空白.doc");
             mailItem.Send();
             MessageBox.Show("已經發送郵件至" + emailAddress, "完成！");
         }

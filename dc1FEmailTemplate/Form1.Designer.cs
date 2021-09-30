@@ -49,7 +49,7 @@ namespace dc1FEmailTemplate
             // startDatePicker
             // 
             this.startDatePicker.Location = new System.Drawing.Point(337, 82);
-            this.startDatePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.startDatePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.startDatePicker.Name = "startDatePicker";
             this.startDatePicker.Size = new System.Drawing.Size(186, 22);
             this.startDatePicker.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace dc1FEmailTemplate
             // name
             // 
             this.name.Location = new System.Drawing.Point(337, 14);
-            this.name.Margin = new System.Windows.Forms.Padding(2);
+            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(186, 22);
             this.name.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace dc1FEmailTemplate
             // endDatePicker
             // 
             this.endDatePicker.Location = new System.Drawing.Point(337, 116);
-            this.endDatePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.endDatePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.endDatePicker.Name = "endDatePicker";
             this.endDatePicker.Size = new System.Drawing.Size(186, 22);
             this.endDatePicker.TabIndex = 0;
@@ -83,7 +83,7 @@ namespace dc1FEmailTemplate
             // buttonGenerate
             // 
             this.buttonGenerate.Location = new System.Drawing.Point(282, 363);
-            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGenerate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(241, 30);
             this.buttonGenerate.TabIndex = 3;
@@ -114,8 +114,8 @@ namespace dc1FEmailTemplate
             // ckb_late
             // 
             this.ckb_late.AutoSize = true;
-            this.ckb_late.Location = new System.Drawing.Point(337, 306);
-            this.ckb_late.Margin = new System.Windows.Forms.Padding(2);
+            this.ckb_late.Location = new System.Drawing.Point(337, 321);
+            this.ckb_late.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckb_late.Name = "ckb_late";
             this.ckb_late.Size = new System.Drawing.Size(72, 16);
             this.ckb_late.TabIndex = 4;
@@ -125,7 +125,7 @@ namespace dc1FEmailTemplate
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(14, 17);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(248, 334);
             this.richTextBox1.TabIndex = 5;
@@ -134,7 +134,7 @@ namespace dc1FEmailTemplate
             // buttonCopy
             // 
             this.buttonCopy.Location = new System.Drawing.Point(14, 363);
-            this.buttonCopy.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCopy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(246, 30);
             this.buttonCopy.TabIndex = 6;
@@ -144,6 +144,7 @@ namespace dc1FEmailTemplate
             // 
             // ckList_rentArea
             // 
+            this.ckList_rentArea.CheckOnClick = true;
             this.ckList_rentArea.FormattingEnabled = true;
             this.ckList_rentArea.Items.AddRange(new object[] {
             "A區",
@@ -152,12 +153,13 @@ namespace dc1FEmailTemplate
             "D區",
             "E區",
             "F區",
-            "草皮",
-            "大廣場"});
+            "廣庭",
+            "大草皮",
+            "東側門"});
             this.ckList_rentArea.Location = new System.Drawing.Point(337, 153);
-            this.ckList_rentArea.Margin = new System.Windows.Forms.Padding(2);
+            this.ckList_rentArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ckList_rentArea.Name = "ckList_rentArea";
-            this.ckList_rentArea.Size = new System.Drawing.Size(186, 140);
+            this.ckList_rentArea.Size = new System.Drawing.Size(186, 157);
             this.ckList_rentArea.TabIndex = 15;
             // 
             // label4
@@ -173,7 +175,7 @@ namespace dc1FEmailTemplate
             // txbEmail
             // 
             this.txbEmail.Location = new System.Drawing.Point(337, 47);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(186, 22);
             this.txbEmail.TabIndex = 1;
@@ -209,7 +211,7 @@ namespace dc1FEmailTemplate
             this.Controls.Add(this.startDatePicker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "院辦Email催繳";
             this.ResumeLayout(false);
