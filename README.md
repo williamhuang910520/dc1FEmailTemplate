@@ -17,5 +17,8 @@
 **請務必去寄件備份確認一下郵件是否已經寄出!**
 
 ### 更改範本格式
+
+![自訂格式](https://user-images.githubusercontent.com/57737139/137278388-b669ccac-2d76-47f5-b31e-5c2e8f121f8c.gif)
+
 ### 更改範本路徑
 
