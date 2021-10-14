@@ -9,7 +9,7 @@
 
 # 使用方法
 ### 基本操作
-![動畫](https://user-images.githubusercontent.com/57737139/137276532-3717386c-463f-4e95-8876-539c05b70065.gif)
+![動畫](https://user-images.githubusercontent.com/57737139/137276532-3717386c-463f-4e95-8876-539c05b70065.gif=250)
 1. 填入資料
 2. 按下"生成文字"
 3. 按下"傳送郵件"
