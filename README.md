@@ -9,16 +9,19 @@
 
 # 使用方法
 ### 基本操作
-![動畫](https://user-images.githubusercontent.com/57737139/137276532-3717386c-463f-4e95-8876-539c05b70065.gif=250x)
+
+<img src="https://user-images.githubusercontent.com/57737139/137276532-3717386c-463f-4e95-8876-539c05b70065.gif" alt="drawing" width="500"/>
+
 1. 填入資料
 2. 按下"生成文字"
 3. 按下"傳送郵件"
-4. 發送完成！！
-**請務必去寄件備份確認一下郵件是否已經寄出!**
+4. 發送完成，**請務必去寄件備份確認一下郵件是否已經寄出!**
 
 ### 更改範本格式
+"姓氏"、"開始日期"、"結束日期"、"借用場地"、"歸還日期"、"是否逾時"為替換用字元，請勿任意改動其內容（但可以改變文字樣式如字體、大小、粗體...等），其餘均可自由設定。
 
-![自訂格式](https://user-images.githubusercontent.com/57737139/137278388-b669ccac-2d76-47f5-b31e-5c2e8f121f8c.gif)
+<img src="https://user-images.githubusercontent.com/57737139/137278388-b669ccac-2d76-47f5-b31e-5c2e8f121f8c.gif" alt="自訂格式" width="500"/>
 
 ### 更改範本路徑
+開發中，敬請期待~~
 
