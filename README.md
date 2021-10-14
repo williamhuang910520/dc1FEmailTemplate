@@ -22,6 +22,6 @@
 
 <img src="https://user-images.githubusercontent.com/57737139/137278388-b669ccac-2d76-47f5-b31e-5c2e8f121f8c.gif" alt="自訂格式" width="500"/>
 
-### 更改範本路徑
+### 更改範本及附件路徑
 開發中，敬請期待~~
 
